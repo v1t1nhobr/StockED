@@ -102,7 +102,7 @@ Utiliza uma função hash para determinar a posição de armazenamento dos produ
 | Listagem | O(n) | O(n) | O(n + m) |
 | Implementação | Simples | Intermediária | Intermediária |
 
-Na tabela hash, `m` representa a quantidade de posições da tabela. Em situações com muitas colisões, determinadas operações podem apresentar complexidade O(n).
+Na tabela hash, `m` representa a quantidade de posições da tabela. A complexidade média O(1) pressupõe uma boa distribuição dos elementos e um fator de carga controlado. Em situações com muitas colisões, determinadas operações podem apresentar complexidade O(n).
 
 ## Resultados Obtidos
 
@@ -121,7 +121,7 @@ Os resultados demonstram que o desempenho pode variar de acordo com a organizaç
 
 A tabela hash foi considerada a estrutura mais adequada para a situação-problema apresentada, pois um sistema de gerenciamento de estoque realiza frequentemente operações de busca e atualização de produtos pelo código.
 
-Sua complexidade média O(1) nessas operações representa uma vantagem em relação à busca sequencial utilizada pelo vetor e pela lista encadeada.
+Sua complexidade média O(1), em condições adequadas de distribuição e ocupação, representa uma vantagem em relação à busca sequencial utilizada pelo vetor e pela lista encadeada.
 
 Apesar da possibilidade de colisões e da capacidade fixa da tabela implementada, a tabela hash apresenta características favoráveis às necessidades do sistema proposto.
 
@@ -144,7 +144,7 @@ Apesar da possibilidade de colisões e da capacidade fixa da tabela implementada
 
 ### Pelo terminal do Windows
 
-Compile o código:
+Na pasta onde está localizado o arquivo `main.c`, compile o código:
 
 ```bash
 gcc main.c -o StockED.exe
